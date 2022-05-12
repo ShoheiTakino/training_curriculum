@@ -9,6 +9,9 @@
 <!--不要div削除-->
   <div class='calendar'><!--必要-->
     <% @week_days.each do |day| %>
+      <div class='item'>
+        <div class='date'>
+          <%= day[:month] %>/<%= day[:date] %><%= day[:wday] %><!--勉強用曜日実装-->
       <div class='item'><!--必要-->
         <div class='date'><!--必要-->
           <% day[:month] %>/<% day[:date] %>
